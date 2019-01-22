@@ -10,8 +10,8 @@ describe('Pirates API', () => {
                 'bernard'
             ])
             .then(res => {
-              console.log('this this', res.body);
-                expect(res.header).toContain('bernice');
+                console.log('this this', res.body);
+                expect(res.status).toEqual(200);
             });
     });
 });
